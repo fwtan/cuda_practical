@@ -2,7 +2,7 @@
 INC	:= -I$(CUDA_HOME)/include -I. -I../headers
 LIB	:= -L$(CUDA_HOME)/lib64 -lcudart
 
-NVCCFLAGS	:= -lineinfo -arch=sm_70 --ptxas-options=-v --use_fast_math
+NVCCFLAGS	:= -lineinfo -arch=sm_89 --ptxas-options=-v --use_fast_math
 
 all: 		laplace3d laplace3d_new
 

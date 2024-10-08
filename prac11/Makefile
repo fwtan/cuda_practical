@@ -2,7 +2,7 @@
 INC	:= -I$(CUDA_HOME)/include -I. -I../headers
 LIB	:= -L$(CUDA_HOME)/lib64 -lcudart
 
-NVCCFLAGS	:= -lineinfo -arch=sm_70 --ptxas-options=-v --use_fast_math -O3
+NVCCFLAGS	:= -lineinfo -arch=sm_89 --ptxas-options=-v --use_fast_math -O3
 
 all:			stream_legacy stream_per_thread multithread_legacy multithread_per_thread
 

@@ -2,7 +2,7 @@
 INC	:= -I$(CUDA_HOME)/include -I. -I../headers
 LIB	:= -L$(CUDA_HOME)/lib64 -lcudart -lcurand
 
-NVCCFLAGS	:= -lineinfo -arch=sm_70 --ptxas-options=-v --use_fast_math -O3
+NVCCFLAGS	:= -lineinfo -arch=sm_89 --ptxas-options=-v --use_fast_math -O3
 
 all: kernel_overlap work_streaming
 
